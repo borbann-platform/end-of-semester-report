@@ -1,0 +1,50 @@
+\documentclass[12pt,oneside,openany]{article}
+
+\usepackage{ifthen}
+\newboolean{PrintVersion}
+\setboolean{PrintVersion}{false} 
+\usepackage{lipsum} 
+\usepackage{tikz}
+\usepackage{tabularx}
+\usepackage{subcaption}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{pgfgantt} % For Gantt charts
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\input{thesis-preamble}
+\input{private/thesis-margins-and-spaces}
+
+\begin{document}
+
+\newcommand{\thesisauthor}{Pattadon Loyprasert 6510545608}
+\newcommand{\thesecondsisauthor}{Sirin Phungkun 6510545730}
+\newcommand{\thesistitlecoverpage}{BorBann\\ A Real Estate Information Platform\\ (End-of-Semester Progress Report)}
+\newcommand{\nameofprogram}{01219395 Innovative Software Group Project Preparation}
+\newcommand{\academicunit}{\nameofprogram}
+\newcommand{\faculty}{Faculty of Engineering}
+\newcommand{\graduationyear}{2025}
+
+\input{private/frontpage}
+\input{private/approvalpage}
+
+\newpage
+\pagenumbering{arabic}
+\pagestyle{headings}
+
+\include{contents/main_content}
+
+\end{document}
